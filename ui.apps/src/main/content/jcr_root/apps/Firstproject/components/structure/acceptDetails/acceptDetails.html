@@ -1,0 +1,13 @@
+<h1>Details: </h1>
+
+<div data-sly-use.data="com.mindtree.aem.core.models.Bookname">
+	<h1>Name Of Author:${data.fullname}</h1>
+	<h1>Price: <strong>${data.marks}</strong></h1>
+	
+	<div data-sly-list="${data.bookname}">
+		----------Book No: ${itemList.count}-------------
+		<p>Book: <b>${item}</b></p>				
+	</div>
+	
+	<p>All Book names: <b>${data.bookname @join=', '}</b></p>
+</div>
