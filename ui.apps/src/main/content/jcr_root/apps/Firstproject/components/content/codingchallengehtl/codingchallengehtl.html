@@ -1,0 +1,24 @@
+
+<!-- <sly data-sly-test.nameExists="${properties.name}"/> -->
+
+<sly data-sly-test.nameExists="${properties.name}">
+
+    
+
+<pre data-sly-use.namemodel="com.mindtree.aem.core.models.NameCapsModel">
+	<h3>Name:  ${namemodel.fname}</h3>
+</pre>
+</sly>
+
+<sly data-sly-test="${!nameExists}">
+	<pre>
+	<div data-sly-include="includeany.html">
+	</div>
+	</pre>
+</sly>
+
+<div data-sly-use.var1="aboutus.html">
+<div data-sly-call="${var1 @ fname=namemodel.fname}"></div>
+</div>
+
+
