@@ -2,15 +2,14 @@
 <!-- <sly data-sly-test.nameExists="${properties.name}"/> -->
 <sly data-sly-test.nameExists="${properties.name}">
 <pre data-sly-use.namemodel="com.mindtree.aem.core.models.NameCapsModel">
-	<!-- <h3>Name s ${namemodel.fname}</h3> 
-	HEllo -->
+	<!-- <h3>Name s ${namemodel.fname}</h3> -->
 </pre>
 </sly>
 
 <h3>${namemodel.fname}</h3>
 <sly data-sly-test="${!nameExists}">
 	<pre>
-		Please enter a your Name!!!
+		Please enter a Name!!!
 	</pre>
 </sly>
 
