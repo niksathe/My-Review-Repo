@@ -6,5 +6,8 @@ public interface CodingChallengeInterface {
 
 
 	List<String> getCodingmultifield();
-	String ;
+	Boolean isCheckboolean();
+	String getSelectdropdown();
+	String getPath();
+	
 }

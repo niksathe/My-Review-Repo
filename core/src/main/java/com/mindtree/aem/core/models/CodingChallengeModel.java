@@ -16,6 +16,16 @@ public class CodingChallengeModel implements CodingChallengeInterface {
 
 	@ValueMapValue
 	private List<String> codingmultifield;
+	
+	@ValueMapValue
+	private Boolean checkboolean;
+	
+	@ValueMapValue
+	private String path;
+	
+	@ValueMapValue
+	private String selectdropdown;
+	
 
 	@Override
 	public List<String> getCodingmultifield() {
@@ -24,6 +34,21 @@ public class CodingChallengeModel implements CodingChallengeInterface {
 		}else {
 			return Collections.emptyList();
 		}
+	}
+
+	@Override
+	public Boolean isCheckboolean() {
+		return checkboolean;
+	}
+
+	@Override
+	public String getSelectdropdown() {
+		return selectdropdown;
+	}
+
+	@Override
+	public String getPath() {
+		return path;
 	}
 	
 	
