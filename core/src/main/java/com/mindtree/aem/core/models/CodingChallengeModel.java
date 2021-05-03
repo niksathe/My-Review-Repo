@@ -17,9 +17,7 @@ public class CodingChallengeModel implements CodingChallengeInterface {
 	@ValueMapValue
 	private List<String> codingmultifield;
 
-//	@Inject
-//	private String abc;
-//	
+	@Override
 	public List<String> getCodingmultifield() {
 		if (codingmultifield!=null) {
 			return new ArrayList<String>(codingmultifield);

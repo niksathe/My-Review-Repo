@@ -6,4 +6,6 @@ public interface CodingChallengeInterface {
 
 
 	List<String> getCodingmultifield();
+	String selectdropdown;
+	
 }
