@@ -41,7 +41,6 @@
                                 value="codingphase2"/>
                         </items>
                     </linkColor>
-                    
                     <booleancheck
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/foundation/form/checkbox"
