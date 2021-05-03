@@ -11,7 +11,7 @@
             <column
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/container">
-                <items jcr:primaryType="nt:unstructured">
+                <Copy_x0020_of_x0020_items jcr:primaryType="nt:unstructured">
                     <multifield
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
@@ -29,7 +29,7 @@
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/foundation/form/select"
                         fieldLabel="Select For Coding C"
-                        name="./selectdropdown">
+                        name="./select">
                         <items jcr:primaryType="nt:unstructured">
                             <primary
                                 jcr:primaryType="nt:unstructured"
@@ -41,23 +41,11 @@
                                 value="codingphase2"/>
                         </items>
                     </linkColor>
-                    
-                    <booleancheck
+                    <Marked
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/checkbox"
-                        checked="{Boolean}true"
-                        name="./checkboolean"
-                        text="Check or uncheck the box."
-                        uncheckedValue="{Boolean}false"
-                        value="{Boolean}true"/>
-                    <path
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/foundation/form/pathbrowser"
-                        emptyText="Path to target file"
-                        fieldLabel="Enter the path"
-                        name="./path"
-                        rootPath="/content/"/>
-                </items>
+                        jcr:title="marked"
+                        type="Boolean"/>
+                </Copy_x0020_of_x0020_items>
             </column>
         </items>
     </content>

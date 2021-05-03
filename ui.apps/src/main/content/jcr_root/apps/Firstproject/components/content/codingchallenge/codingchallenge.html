@@ -1,8 +1,17 @@
 <h1>Here is the Multifield data:</h1>
 
 <div data-sly-use.fetchdata="com.mindtree.aem.core.models.CodingChallengeInterface">
-	<div data-sly-list="${fetchdata.bookname}">
+	<div data-sly-list="${fetchdata.codingmultifield}">
 
-		<p>Multifield txt No: ${itemList.count} <b> ${item}</b></p>				
+		<p>Multifield text No: ${itemList.count} <b> ${item}</b></p>
+
+<hr>
+<p>Selected from select: ${fetchdata.selectdropdown} </p>
+
+<p>Boolean value of checkbox: ${fetchdata.checkboolean} </p>
+
+<p>Path to target: ${fetchdata.path}</p>
+
+<h1>Hello Minds</h1>
 	</div>
 </div>
