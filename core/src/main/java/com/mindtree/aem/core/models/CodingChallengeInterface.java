@@ -6,9 +6,5 @@ public interface CodingChallengeInterface {
 
 
 	List<String> getCodingmultifield();
-<<<<<<< HEAD
 	String ;
-=======
->>>>>>> nbm
-	
 }
