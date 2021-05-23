@@ -20,11 +20,18 @@ public class CodingChallengeModel implements CodingChallengeInterface {
 	private Boolean checkboolean;
 	
 	@ValueMapValue
-	private String str;
+	private String path;
 	
 	@ValueMapValue
 	private String selectdropdown;
 	
+	@ValueMapValue
+	String fileReference;
+	
+	@Override
+	public String getFileReference() {
+		return fileReference;
+	}
 
 	@Override
 	public List<String> getCodingmultifield() {
@@ -46,7 +53,7 @@ public class CodingChallengeModel implements CodingChallengeInterface {
 	}
 
 	@Override
-	public String getStr() {
-		return str;
+	public String getPath() {
+		return path;
 	}
 }
